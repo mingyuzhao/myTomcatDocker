@@ -105,5 +105,7 @@ RUN set -e \
 		exit 1; \
 	fi
 
+COPY tomcat-users.xml ${CATALINA_HOME}/conf/
+
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
