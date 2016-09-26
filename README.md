@@ -16,7 +16,8 @@ Installation
 ------------
 docker build -t my-tomcat-8.5 . 
 
-docker run -it --rm --name my-running-tomcat -p 8888:8888 -v /myData/webapp:/usr/local/tomcat/webapps my-tomcat-8.5
+docker run -it --rm --name my-running-tomcat -p 8888:8080 -v $PWD/webapps:/usr/local/tomcat/webapps -v $PWD/conf:/usr/local/tomcat/conf my-new-tomcat
+
 
 Testing
 -----------
