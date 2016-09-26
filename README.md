@@ -14,9 +14,9 @@ In “config.json”, you can set the port and endpoints of API services, as wel
 
 Installation
 ------------
-docker build -t myTomcat . 
+docker build -t my-tomcat-8.5 . 
 
-docker run -it --rm --name my-running-Tomcat -p 8888:8888 -v /myData/webapp:/usr/local/tomcat/webapps myTomcat
+docker run -it --rm --name my-running-tomcat -p 8888:8888 -v /myData/webapp:/usr/local/tomcat/webapps my-tomcat-8.5
 
 Testing
 -----------
