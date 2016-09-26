@@ -23,14 +23,11 @@ Testing
 -----------
 Given:
 
-Docker IP: 192.168.99.100 
+Container IP: 192.168.99.100 
 
-Host IP:  192.168.0.38
+Then go to:
 
-
-Then:
-
-curl -H "Content-Type:text/plain" -X POST -d '{"role":"admin","scope":"default","userId":"admin","password":"admin","grantType":"password"}' http://192.168.99.100:8888/oauth2Tokens
+http://192.168.99.100:8080
 
 
 Resources
